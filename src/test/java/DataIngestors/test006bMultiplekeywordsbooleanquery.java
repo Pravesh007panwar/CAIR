@@ -13,7 +13,8 @@ public class test006bMultiplekeywordsbooleanquery extends InnsightLogin {
 	driver.findElement(By.cssSelector("input#txtTwSrch")).clear();
 	driver.findElement(By.cssSelector("input#txtTwSrch")).sendKeys("(India AND Kashmir) OR (Pakistan AND Kashmir)");
 	driver.findElement(By.cssSelector("span#searchTweet")).click();
-	Thread.sleep(15000);
+	Thread.sleep(35000);
+	driver.quit();
 	
 	}
 	

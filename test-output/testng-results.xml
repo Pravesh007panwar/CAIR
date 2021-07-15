@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-14T23:50:01 IST" name="Default suite" finished-at="2021-07-14T23:50:34 IST" duration-ms="33069">
+  <suite started-at="2021-07-15T17:11:16 IST" name="Default suite" finished-at="2021-07-15T17:13:07 IST" duration-ms="111580">
     <groups>
     </groups>
-    <test started-at="2021-07-14T23:50:01 IST" name="Default test" finished-at="2021-07-14T23:50:34 IST" duration-ms="33069">
-      <class name="Repo.InnsightLogin2">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Repo.InnsightLogin2@4445629]" started-at="2021-07-14T23:50:01 IST" name="beforeTest" finished-at="2021-07-14T23:50:34 IST" duration-ms="32846" status="PASS">
+    <test started-at="2021-07-15T17:11:16 IST" name="Default test" finished-at="2021-07-15T17:13:07 IST" duration-ms="111580">
+      <class name="DataIngestors.test007AddAvtar">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:DataIngestors.test007AddAvtar@18ce0030]" started-at="2021-07-15T17:11:16 IST" name="beforeTest" finished-at="2021-07-15T17:11:28 IST" duration-ms="12071" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="INNSIGHTLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Repo.InnsightLogin2@4445629]" started-at="2021-07-14T23:50:34 IST" name="INNSIGHTLogin" finished-at="2021-07-14T23:50:34 IST" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'URL' is required by @Test on method INNSIGHTLogin but has not been marked @Optional or defined
-in C:\Users\HP\AppData\Local\Temp\testng-eclipse-1393139860\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'URL' is required by @Test on method INNSIGHTLogin but has not been marked @Optional or defined
-in C:\Users\HP\AppData\Local\Temp\testng-eclipse-1393139860\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:268)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:700)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:875)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:788)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:767)
-at org.testng.TestRunner.run(TestRunner.java:588)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
-at org.testng.TestNG.runSuites(TestNG.java:1066)
-at org.testng.TestNG.run(TestNG.java:1034)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="INNSIGHTLogin()[pri:0, instance:DataIngestors.test007AddAvtar@18ce0030]" started-at="2021-07-15T17:11:28 IST" name="INNSIGHTLogin" finished-at="2021-07-15T17:11:56 IST" duration-ms="27715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- INNSIGHTLogin -->
-      </class> <!-- Repo.InnsightLogin2 -->
+        <test-method is-config="true" signature="avatarcrawling()[pri:0, instance:DataIngestors.test007AddAvtar@18ce0030]" started-at="2021-07-15T17:11:56 IST" name="avatarcrawling" finished-at="2021-07-15T17:13:07 IST" duration-ms="71685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- avatarcrawling -->
+      </class> <!-- DataIngestors.test007AddAvtar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
