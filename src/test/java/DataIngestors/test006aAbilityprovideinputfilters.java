@@ -1,8 +1,6 @@
 package DataIngestors;
 
 import java.awt.AWTException;
-import java.awt.Desktop.Action;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -59,6 +57,7 @@ public class test006aAbilityprovideinputfilters extends InnsightLogin {
 		poly.release();
 
 		poly.build().perform();
+		driver.quit();
 
 	}
 }
