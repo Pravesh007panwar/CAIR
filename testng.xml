@@ -8,7 +8,7 @@
 		<parameter name="password" value="Pravesh@3210#" />
 
 		<classes>
-			<class name=Repo.InnsightLogin2" />
+			<class name="Repo.InnsightLogin2" />
 		</classes>
 	</test>
 </suite> 

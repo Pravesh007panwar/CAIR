@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Repo.InnsightLogin2">
+      <class name="BigdataRepository.test111Abilitytolinkjump">
         <methods>
           <include name="beforeTest"/>
-          <include name="INNSIGHTLogin"/>
+          <include name="Maintaincontainer"/>
         </methods>
-      </class> <!-- Repo.InnsightLogin2 -->
+      </class> <!-- BigdataRepository.test111Abilitytolinkjump -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
