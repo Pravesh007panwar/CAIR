@@ -41,6 +41,7 @@ public class test012abilitytobealerted extends InnsightLogin {
 		Thread.sleep(2000);
 		driver.findElement(By.cssSelector("button#btnSrcAlerts")).click();
 		Thread.sleep(10000);
+		driver.quit();
 	}
 		
 		

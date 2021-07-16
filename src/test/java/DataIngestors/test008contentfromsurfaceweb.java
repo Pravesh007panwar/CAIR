@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
 
 public class test008contentfromsurfaceweb extends InnsightLogin {
-	
+
 	@AfterClass
 	public void contentfromsurfaceweb() throws InterruptedException {
 
@@ -14,16 +14,13 @@ public class test008contentfromsurfaceweb extends InnsightLogin {
 		Thread.sleep(2000);
 		driver.findElement(By.cssSelector("span#lblNewsCheckUnCheckAll")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.cssSelector("span#lblCheckUnCheckAll")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"ulEntifilSource\"]/li[12]/label/span")).click();
-		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"headingTwo\"]/h4/span/a[1]")).click();
-		Thread.sleep(25000);
-		
+		Thread.sleep(15000);
+
+		driver.findElement(By.cssSelector("a#twDashboard")).click();
+		Thread.sleep(10000);
 		driver.quit();
-		
-		
+
 	}
 
 }
