@@ -10,7 +10,7 @@ public class CAIRHomePage {
 
 	By Account = By.id("divlogout");
 	By Settings = By.id("divSettingId");
-	By Collections = By.linkText("onclick");
+	By Collections = By.xpath("/html/body/form/div/header/div[2]/ul/li[13]/a");
 	By Profilefinder = By.xpath("/html/body/form/div/header/div[2]/ul/li[12]/a");
 	By Alert = By.xpath("/html/body/form/div/header/div[2]/ul/li[7]");
 	By Utility = By.xpath("/html/body/form/div/header/div[2]/ul/li[3]/a/div[1]");

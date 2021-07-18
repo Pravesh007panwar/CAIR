@@ -1,18 +1,20 @@
 package DataIngestors;
 
-import org.openqa.selenium.By;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+
+import CAIRObjectRepository.CAIRHomePage;
 
 public class test009misspellingstargetsearchterms extends InnsightLogin {
 
 
-@AfterClass
+@Test
 public void misspellingstargetsearchterms() throws Exception {
-	driver.findElement(By.cssSelector("input#txtTwSrch")).sendKeys("moid");
+	
+	CAIRHomePage hp = new CAIRHomePage(driver);
 	Thread.sleep(2000);
-	driver.findElement(By.cssSelector("span#searchTweet")).click();
+	hp.Search().sendKeys("Moid");
 	Thread.sleep(2000);
-	driver.findElement(By.xpath("/html/body/form/div/header/div[2]/ul/li[13]")).click();
-	Thread.sleep(12000);
+	hp.searchicon().click();
+	
 }
 }

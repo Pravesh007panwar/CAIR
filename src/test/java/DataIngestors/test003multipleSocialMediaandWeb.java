@@ -3,11 +3,11 @@ package DataIngestors;
 import java.awt.AWTException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
 
 public class test003multipleSocialMediaandWeb extends InnsightLogin {
 
-	@AfterClass
+	@Test
 
 	public void supportCrawlingandScraping() throws InterruptedException, AWTException {
 

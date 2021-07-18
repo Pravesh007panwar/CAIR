@@ -7,11 +7,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
 
 public class test007AddAvtar extends InnsightLogin {
 
-	@AfterClass
+	@Test
 	public void avatarcrawling() throws Exception {
 		
 		

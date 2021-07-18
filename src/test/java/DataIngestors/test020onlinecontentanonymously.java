@@ -1,23 +1,26 @@
 package DataIngestors;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
 
+import CAIRObjectRepository.CAIRDashboardPage;
+import CAIRObjectRepository.CAIRHomePage;
+
 public class test020onlinecontentanonymously extends InnsightLogin {
-	
+
 	@AfterClass
 	public void onlinecontent() throws InterruptedException {
 
-		driver.findElement(By.cssSelector("input#txtTwSrch")).clear();
-		driver.findElement(By.cssSelector("input#txtTwSrch")).sendKeys("India AND Kashmir");
-		driver.findElement(By.xpath("//*[@id=\"searchTweet\"]")).click();
-		Thread.sleep(10000);
-		driver.findElement(By.cssSelector("a#twDashboard")).click();
+		CAIRHomePage hp = new CAIRHomePage(driver);
+		Thread.sleep(2000);
+		hp.Search().sendKeys("India AND Kashmir");
+		Thread.sleep(2000);
+		hp.searchicon().click();
+		Thread.sleep(30000);
+		CAIRDashboardPage dp = new CAIRDashboardPage(driver);
+		dp.DashBoardButton().click();
 		Thread.sleep(20000);
-		
 		driver.quit();
-		
-		
+
 	}
 
 }

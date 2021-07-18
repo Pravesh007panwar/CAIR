@@ -1,11 +1,11 @@
 package DataIngestors;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
 
 public class test008contentfromsurfaceweb extends InnsightLogin {
 
-	@AfterClass
+	@Test
 	public void contentfromsurfaceweb() throws InterruptedException {
 
 		driver.findElement(By.cssSelector("input#txtTwSrch")).clear();

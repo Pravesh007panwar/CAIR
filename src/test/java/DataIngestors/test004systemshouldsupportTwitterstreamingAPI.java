@@ -1,11 +1,11 @@
 package DataIngestors;
 
 import org.openqa.selenium.By;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
 
 public class test004systemshouldsupportTwitterstreamingAPI extends InnsightLogin {
 	
-	@AfterClass
+@Test
 	public void MultipleSocialMediaHandles() throws InterruptedException {
 
 		driver.findElement(By.cssSelector("input#txtTwSrch")).clear();

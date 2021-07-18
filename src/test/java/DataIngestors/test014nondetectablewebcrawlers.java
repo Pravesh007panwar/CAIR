@@ -1,26 +1,33 @@
 package DataIngestors;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
+
+import CAIRObjectRepository.ArticlesPage;
+import CAIRObjectRepository.CAIRDashboardPage;
+import CAIRObjectRepository.CAIRHomePage;
 
 public class test014nondetectablewebcrawlers extends InnsightLogin {
 	
 	@AfterClass
 	public void nondetectablewebcrawlers() throws InterruptedException {
 
-		driver.findElement(By.cssSelector("input#txtTwSrch")).clear();
-		driver.findElement(By.cssSelector("input#txtTwSrch")).sendKeys("India AND Kashmir");
-		driver.findElement(By.xpath("/html/body/form/div/header/div[1]/div[2]/div/div[2]/ul[1]/li[1]/a")).click();
+		CAIRHomePage hp = new CAIRHomePage(driver);
+		hp.Search().sendKeys("India");
+		hp.searchicon().click();
 		Thread.sleep(2000);
-		driver.findElement(By.cssSelector("span#lblNewsCheckUnCheckAll")).click();
+		hp.Advancedfilter().click();
+
+		ArticlesPage ap = new ArticlesPage(driver);
+		ap.CountryDeskUncheck().click();
+		ap.SocialMediaSourcesUncheck().click();
+		Thread.sleep(1000);
+		ap.SetWebSite().click();
 		Thread.sleep(2000);
-		driver.findElement(By.cssSelector("span#lblCheckUnCheckAll")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"ulEntifilSource\"]/li[13]/label/span")).click();
-		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"headingTwo\"]/h4/span/a[1]")).click();
-		Thread.sleep(25000);
-		
+		ap.ClickApply().click();
+		Thread.sleep(10000);
+		CAIRDashboardPage dp = new CAIRDashboardPage(driver);
+		dp.DashBoardButton().click();
+		Thread.sleep(20000);
 		driver.quit();
 		
 		

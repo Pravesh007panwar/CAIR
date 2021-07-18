@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BigdataRepository.test105ProfileFinder">
+      <class name="Repo.InnsightLogin">
         <methods>
-          <include name="profileFinder"/>
           <include name="beforeTest"/>
+          <include name="INNSIGHTLogin"/>
         </methods>
-      </class> <!-- BigdataRepository.test105ProfileFinder -->
+      </class> <!-- Repo.InnsightLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

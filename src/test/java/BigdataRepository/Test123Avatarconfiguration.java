@@ -1,19 +1,19 @@
 package BigdataRepository;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import CAIRObjectRepository.CollectionPage;
 import Repo.InnsightLogin2;
 
 public class Test123Avatarconfiguration extends InnsightLogin2 {
 	@Test
-	public void Avatarconfig() throws InterruptedException {
-		
-    driver.findElement(By.xpath("//*[@id=\"mat-expansion-panel-header-1\"]/span[2]")).click();
-	Thread.sleep(2000);
-	driver.findElement(By.xpath("//*[@id=\"cdk-accordion-child-1\"]/div/ul/li[2]/button")).click();
-	Thread.sleep(2000);
-	
+	public void Avatarconfig123() throws InterruptedException {
 
-}
+		Thread.sleep(2000);
+		CollectionPage cp = new CollectionPage(driver);
+		cp.ManageAvtarClick().click();
+
+		cp.AddAvtar().click();
+
+	}
 }

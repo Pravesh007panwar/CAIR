@@ -14,36 +14,28 @@ import org.testng.annotations.Test;
 
 public class test001supportCrawlingandScraping extends InnsightLogin {
 
-	// @Test(groups= {"Smoke"})
 	@Test
 	public void supportCrawlingandScraping() throws InterruptedException, AWTException, IOException {
 
-		/*
-		 * Properties prop = new Properties(); FileInputStream FIS = new
-		 * FileInputStream(
-		 * "C:\\Users\\HP\\eclipse-workspace\\CAIR\\src\\test\\java\\Repo\\Global.properties"
-		 * ); prop.load(FIS); prop.getProperty("url");
-		 */
-        
-	
 
-		System.out.println("Click on Collection");
 		Actions a = new Actions(driver);
-		a.moveToElement(driver.findElement(By.xpath("/html/body/form/div/header/div[2]/ul/li[13]/a"))).build().perform();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+		a.moveToElement(driver.findElement(By.xpath("/html/body/form/div/header/div[2]/ul/li[13]/a"))).build()
+				.perform();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement collection = driver.findElement(By.xpath("/html/body/form/div/header/div[2]/ul/li[13]/a"));
-		js.executeScript("arguments[0].setAttribute('style', 'background: blue; border: 2px solid red;');", collection);
+		js.executeScript("arguments[0].setAttribute('style', 'background: white; border: 2px solid red;');", collection);
 		collection.click();
-		
-		
-		 Set<String> window = driver.getWindowHandles();
-	     Iterator<String> it= window.iterator();
-	      String ParentID = it.next();
-	      String ChildID = it.next();
-	      driver.switchTo().window(ChildID);
-	      
+
+		Set<String> window = driver.getWindowHandles();
+		Iterator<String> it = window.iterator();
+		String ParentID = it.next();
+		String ChildID = it.next();
+		driver.switchTo().window(ChildID);
+
 		Thread.sleep(10000);
-		driver.findElement(By.xpath("/html/body/app-root/app-navigation-manager/main/mat-sidenav-container/mat-sidenav-content/div/app-collection-list/section/div/div/div[1]/div/div/div[2]/div/a")).click();
+		driver.findElement(By.xpath(
+				"/html/body/app-root/app-navigation-manager/main/mat-sidenav-container/mat-sidenav-content/div/app-collection-list/section/div/div/div[1]/div/div/div[2]/div/a"))
+				.click();
 		driver.findElement(By.xpath("//*[@id=\"mat-input-1\"]")).sendKeys("New Collection test");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"cdk-step-content-0-0\"]/form/div[2]/button/span[1]")).click();
@@ -78,7 +70,7 @@ public class test001supportCrawlingandScraping extends InnsightLogin {
 		driver.findElement(By.cssSelector("span#searchTweet")).click();
 		driver.findElement(By.cssSelector("a#twColrelate")).click();
 		driver.findElement(By.cssSelector("a#twDashboard")).click();
-		Thread.sleep(10000);
+		Thread.sleep(15000);
 		driver.quit();
 
 	}

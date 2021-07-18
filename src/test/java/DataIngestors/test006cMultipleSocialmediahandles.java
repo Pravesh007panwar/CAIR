@@ -5,10 +5,11 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
 
 public class test006cMultipleSocialmediahandles extends InnsightLogin {
-	
-	@AfterClass
+
+	@Test
 	public void MultipleSocialMediaHandles() throws InterruptedException {
 
 		driver.findElement(By.xpath("/html/body/form/div/header/div[1]/div[2]/div/div[2]/ul[1]/li[3]/a")).click();
@@ -28,28 +29,22 @@ public class test006cMultipleSocialmediahandles extends InnsightLogin {
 		Thread.sleep(2000);
 		driver.findElement(By.cssSelector("span#searchTweet")).click();
 		Thread.sleep(2000);
-		
+
 		driver.findElement(By.xpath("/html/body/form/div/header/div[1]/div[2]/div/div[2]/ul[1]/li[1]/a")).click();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		  js.executeScript("document.querySelector('.col-left-fitter').scrollTop=500");
-		  
-		  
-		  
-		  
-		    Actions a = new Actions(driver);
-			a.moveToElement(driver.findElement(By.xpath("//*[@id=\"ClNewAnalysis\"]/div/div[2]/div/div[5]/div[7]"))).build().perform();
-	        JavascriptExecutor js2 = (JavascriptExecutor) driver;
-			WebElement collection = driver.findElement(By.xpath("//*[@id=\"ClNewAnalysis\"]/div/div[2]/div/div[5]/div[7]"));
-			js2.executeScript("arguments[0].setAttribute('style', 'background: blue; border: 2px solid red;');", collection);
-			collection.click();
-		  
-		  
-		
+		js.executeScript("document.querySelector('.col-left-fitter').scrollTop=500");
+
+		Actions a = new Actions(driver);
+		a.moveToElement(driver.findElement(By.xpath("//*[@id=\"ClNewAnalysis\"]/div/div[2]/div/div[5]/div[7]"))).build()
+				.perform();
+		JavascriptExecutor js2 = (JavascriptExecutor) driver;
+		WebElement collection = driver.findElement(By.xpath("//*[@id=\"ClNewAnalysis\"]/div/div[2]/div/div[5]/div[7]"));
+		js2.executeScript("arguments[0].setAttribute('style', 'background: blue; border: 2px solid red;');",
+				collection);
+		collection.click();
+
 		Thread.sleep(15000);
 
-	
-	
 	}
-	
 
 }

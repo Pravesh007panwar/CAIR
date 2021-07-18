@@ -1,17 +1,19 @@
 package DataIngestors;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
+
+import CAIRObjectRepository.CAIRHomePage;
 
 public class test011queriedcontentrealtime extends InnsightLogin {
 	
 	@AfterClass
 	public void DS() throws InterruptedException {
 
-		driver.findElement(By.cssSelector("input#txtTwSrch")).clear();
-		driver.findElement(By.cssSelector("input#txtTwSrch")).sendKeys("India");
-		driver.findElement(By.xpath("//*[@id=\"searchTweet\"]")).click();
-
+		CAIRHomePage hp = new CAIRHomePage(driver);
+		Thread.sleep(2000);
+		hp.Search().sendKeys("India");
+		Thread.sleep(2000);
+		hp.searchicon().click();
 		Thread.sleep(30000);
 		
 		
