@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -60,7 +61,7 @@ public class InnsightLogin2 {
 		ch.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 		ChromeOptions c = new ChromeOptions();
 		c.merge(ch);
-		System.setProperty("webdriver.chrome.driver", "D:\\selenium\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\selenium\\driver\\chromedriver.exe");
 		c.setExperimentalOption("useAutomationExtension", false);
 		c.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 

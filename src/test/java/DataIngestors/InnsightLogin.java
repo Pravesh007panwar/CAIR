@@ -59,5 +59,9 @@ public class InnsightLogin {
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 		System.out.println("Welcome to INNSIGHT");
 
+		
+		
+		
+		
 	}
 }

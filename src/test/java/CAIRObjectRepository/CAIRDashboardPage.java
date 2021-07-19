@@ -1,5 +1,6 @@
 package CAIRObjectRepository;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,8 +22,22 @@ public class CAIRDashboardPage {
 	WebElement Media;
 	@FindBy(id = "twReport")
 	WebElement Report;
+
+	// ***************************Save Analysis
+	// Elements***********************************
+
 	@FindBy(id = "idSaveSearch")
 	WebElement Save;
+	@FindBy(id = "srchname")
+	WebElement SetAnalysisName;
+	@FindBy(id = "txtSnapShot")
+	WebElement SetSnapshotName;
+	@FindBy(id = "txtDescriptionCase")
+	WebElement SetDescription;
+	@FindBy(xpath = "//*[@id=\"sveSrchFLtr\"]/div/div/div[3]/button[1]")
+	WebElement SaveAnalysisButton;
+	@FindBy(xpath = "//*[@id=\"spnYes\"]")
+	WebElement SaveAnalysisconfirmAlert;
 
 	@FindBy(xpath = "//*[@id=\"widget_dashboard_60-1\"]/div[2]/div/span")
 	WebElement TOPLANGUAGES;
@@ -99,6 +114,30 @@ public class CAIRDashboardPage {
 
 	public WebElement ORG() {
 		return ORG;
+
+	}
+
+	public WebElement SetAnalysisName() {
+		return SetAnalysisName;
+
+	}
+
+	public WebElement SetSnapshotName() {
+		return SetSnapshotName;
+
+	}
+
+	public WebElement SetDescription() {
+		return SetDescription;
+	}
+
+	public WebElement SaveAnalysisButton() {
+		return SaveAnalysisButton;
+
+	}
+
+	public WebElement SaveAnalysisconfirmAlert() {
+		return SaveAnalysisconfirmAlert;
 
 	}
 

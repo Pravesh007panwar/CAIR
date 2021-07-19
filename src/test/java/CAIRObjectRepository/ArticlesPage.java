@@ -22,6 +22,7 @@ public class ArticlesPage {
 	@FindBy(xpath = "//*[@id=\"headingTwo\"]/h4/span/a[1]")
 	WebElement ClickApply;
 	
+	
 
 	
 
