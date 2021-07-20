@@ -40,7 +40,7 @@ public class InnsightLogin {
 		ch.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
 		ChromeOptions c = new ChromeOptions();
 		c.merge(ch);
-		System.setProperty("webdriver.chrome.driver", "D:\\selenium\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Drivers\\chromedriver.exe");
 		c.setExperimentalOption("useAutomationExtension", false);
 		c.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 		

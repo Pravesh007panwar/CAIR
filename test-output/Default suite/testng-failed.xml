@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CAIRTestCases.Test006aAbilityprovideinputfilters">
+      <class name="CAIRTestCases.InnsightLogin">
         <methods>
+          <include name="INNSIGHTLogin"/>
           <include name="beforeTest"/>
-          <include name="polygon"/>
         </methods>
-      </class> <!-- CAIRTestCases.Test006aAbilityprovideinputfilters -->
+      </class> <!-- CAIRTestCases.InnsightLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
