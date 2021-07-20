@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-19T11:34:29 IST" name="Default suite" finished-at="2021-07-19T11:36:48 IST" duration-ms="139270">
+  <suite started-at="2021-07-20T11:22:16 IST" name="Default suite" finished-at="2021-07-20T11:24:19 IST" duration-ms="122661">
     <groups>
     </groups>
-    <test started-at="2021-07-19T11:34:29 IST" name="Default test" finished-at="2021-07-19T11:36:48 IST" duration-ms="139270">
-      <class name="BigdataRepository.Test093ExportDatafromWidget">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:BigdataRepository.Test093ExportDatafromWidget@45b9a632]" started-at="2021-07-19T11:34:29 IST" name="beforeTest" finished-at="2021-07-19T11:34:45 IST" duration-ms="16089" status="PASS">
+    <test started-at="2021-07-20T11:22:16 IST" name="Default test" finished-at="2021-07-20T11:24:19 IST" duration-ms="122661">
+      <class name="CAIRTestCases.Test006aAbilityprovideinputfilters">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:CAIRTestCases.Test006aAbilityprovideinputfilters@45b9a632]" started-at="2021-07-20T11:22:16 IST" name="beforeTest" finished-at="2021-07-20T11:22:51 IST" duration-ms="34975" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="InnsightLogin()[pri:0, instance:BigdataRepository.Test093ExportDatafromWidget@45b9a632]" started-at="2021-07-19T11:34:45 IST" name="InnsightLogin" finished-at="2021-07-19T11:35:50 IST" duration-ms="64200" status="PASS">
+        <test-method signature="INNSIGHTLogin()[pri:0, instance:CAIRTestCases.Test006aAbilityprovideinputfilters@45b9a632]" started-at="2021-07-20T11:22:51 IST" name="INNSIGHTLogin" finished-at="2021-07-20T11:23:37 IST" duration-ms="45739" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InnsightLogin -->
-        <test-method signature="SelectEntitiesWidgets()[pri:0, instance:BigdataRepository.Test093ExportDatafromWidget@45b9a632]" started-at="2021-07-19T11:35:50 IST" name="SelectEntitiesWidgets" finished-at="2021-07-19T11:36:48 IST" duration-ms="58814" status="PASS">
+        </test-method> <!-- INNSIGHTLogin -->
+        <test-method signature="polygon()[pri:0, instance:CAIRTestCases.Test006aAbilityprovideinputfilters@45b9a632]" started-at="2021-07-20T11:23:37 IST" name="polygon" finished-at="2021-07-20T11:24:19 IST" duration-ms="41662" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SelectEntitiesWidgets -->
-      </class> <!-- BigdataRepository.Test093ExportDatafromWidget -->
+        </test-method> <!-- polygon -->
+      </class> <!-- CAIRTestCases.Test006aAbilityprovideinputfilters -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

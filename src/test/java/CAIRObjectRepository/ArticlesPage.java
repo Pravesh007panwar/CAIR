@@ -13,6 +13,8 @@ public class ArticlesPage {
 	@FindBy(id = "lblCheckUnCheckAll")
 	WebElement SocialMediaSourcesUncheck;
 	
+	@FindBy(xpath= ("//*[@id=\"ulEntifilSource\"]/li[1]/label/span"))
+	WebElement SetTwiter;
 	@FindBy(xpath= ("//*[@id=\"ulEntifilSource\"]/li[4]/label/span"))
 	WebElement Setinstagram;
 	@FindBy(xpath= ("//*[@id=\"ulEntifilSource\"]/li[2]/label/span"))
@@ -32,7 +34,9 @@ public class ArticlesPage {
 		PageFactory.initElements(driver, this);
 
 	}
-
+	public WebElement SetTwiter() {
+		return SetTwiter;
+	}
 	public WebElement CountryDeskUncheck() {
 		return CountryDeskUncheck;
 
